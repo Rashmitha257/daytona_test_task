@@ -8,4 +8,6 @@
 import Foundation
 
 let apiUrl = "https://newsapi.org/v2/top-headlines?country=in&apiKey=\(API_Key)"
-
+let storyBorad = "Main"
+let homeScreenIdentifier = "HeadlineScreenImageCollectionViewCell"
+let newsDetailsScreen = "NewsDetailsViewController"

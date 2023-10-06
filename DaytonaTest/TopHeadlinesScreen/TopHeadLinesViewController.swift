@@ -20,6 +20,7 @@ class TopHeadLinesViewController: UIViewController {
         super.viewDidLoad()
         getAndUpdateListInCollectionView()
         getHeadListApiCall()
+        navigationController?.navigationBar.backgroundColor = UIColor.systemOrange
     }
     
     //MARK: - Other func
@@ -47,13 +48,28 @@ extension TopHeadLinesViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeadlineScreenImageCollectionViewCell", for: indexPath) as! HeadlineScreenImageCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: homeScreenIdentifier, for: indexPath) as! HeadlineScreenImageCollectionViewCell
         cell.headLineDetails = headlineList[indexPath.row]
         cell.updateInitialUI()
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.navigateToDetailsScreen(newsDetails: headlineList[indexPath.row])
+    }
     
     
     
+}
+// MARK: - Navigations
+extension TopHeadLinesViewController {
+    
+    /// Navigation to news details screen
+    /// - Parameter newsDetails: news details to display in news details screen
+    func navigateToDetailsScreen(newsDetails: ImageDetails) {
+        let vc =  UIStoryboard(name: storyBorad, bundle: nil).instantiateViewController(withIdentifier: newsDetailsScreen) as! NewsDetailsViewController
+        vc.newsDetails = newsDetails
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }

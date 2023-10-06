@@ -19,6 +19,8 @@ class HeadlineScreenImageCollectionViewCell: UICollectionViewCell {
     var headLineDetails: ImageDetails?
     
     //MARK: - Other func
+    
+    /// Doing initial set up for collection view cell
     func updateInitialUI() {
         updateImage()
         downLoadImage()
@@ -26,14 +28,14 @@ class HeadlineScreenImageCollectionViewCell: UICollectionViewCell {
         addBorderAndColor()
     }
     
+    /// Adding borfer and border width for main view and title lable
     func addBorderAndColor() {
-        self.contentView.layer.borderWidth = 2
-        self.contentView.layer.borderColor = UIColor.lightGray.cgColor
-        outerViewForlabel.layer.borderWidth = 1
-        outerViewForlabel.layer.borderColor = UIColor.lightGray.cgColor
+        self.contentView.getBorderWithGray(2)
+        outerViewForlabel.getBorderWithGray(1)
         outerViewForlabel.layer.cornerRadius = 5
     }
     
+    /// setting image using data
     func updateImage() {
         viewModel.imageData = { [weak self] data in
             DispatchQueue.main.async {
@@ -43,6 +45,7 @@ class HeadlineScreenImageCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    /// Downloading image using image url
     func downLoadImage() {
         if let data = headLineDetails?.data {
             self.imageView.image = UIImage(data: data)
@@ -51,8 +54,9 @@ class HeadlineScreenImageCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    /// Updating totle lable value
     func updateLabelValue() {
-        imageTitleLabel.text = headLineDetails?.title
+        imageTitleLabel.text = headLineDetails?.source?.name
     }
     
     
