@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB3DB99C2ACFA0E400D7C26E /* EnumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3DB99B2ACFA0E400D7C26E /* EnumFile.swift */; };
 		EB84D1C82ACEFA6800C68EF4 /* HeadlineScreenImageCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB84D1C72ACEFA6800C68EF4 /* HeadlineScreenImageCollectionViewModel.swift */; };
 		EB8FFBB92ACE4A4B0006E21F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FFBB82ACE4A4B0006E21F /* AppDelegate.swift */; };
 		EB8FFBBD2ACE4A4B0006E21F /* TopHeadLinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FFBBC2ACE4A4B0006E21F /* TopHeadLinesViewController.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB3DB99B2ACFA0E400D7C26E /* EnumFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFile.swift; sourceTree = "<group>"; };
 		EB84D1C72ACEFA6800C68EF4 /* HeadlineScreenImageCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineScreenImageCollectionViewModel.swift; sourceTree = "<group>"; };
 		EB8FFBB52ACE4A4B0006E21F /* DaytonaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaytonaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8FFBB82ACE4A4B0006E21F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				EB8FFBD32ACE56150006E21F /* Constants.swift */,
-				EB3DB99B2ACFA0E400D7C26E /* EnumFile.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -200,7 +197,6 @@
 				EB8FFBD42ACE56150006E21F /* Constants.swift in Sources */,
 				EB8FFBCD2ACE4B770006E21F /* NetworkManager.swift in Sources */,
 				EB8FFBBD2ACE4A4B0006E21F /* TopHeadLinesViewController.swift in Sources */,
-				EB3DB99C2ACFA0E400D7C26E /* EnumFile.swift in Sources */,
 				EB84D1C82ACEFA6800C68EF4 /* HeadlineScreenImageCollectionViewModel.swift in Sources */,
 				EB8FFBD22ACE541F0006E21F /* ImageDetails.swift in Sources */,
 				EB8FFBD62ACEC21B0006E21F /* HeadlineScreenImageCollectionViewCell.swift in Sources */,

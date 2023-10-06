@@ -7,11 +7,14 @@
 
 import UIKit
 
+var API_Key = ""
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        API_Key = (Bundle.main.object(forInfoDictionaryKey: "API_Key") as? String) ?? ""
         return true
     }
 
