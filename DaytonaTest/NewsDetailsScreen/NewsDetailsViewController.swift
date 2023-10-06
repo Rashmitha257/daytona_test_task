@@ -17,7 +17,7 @@ class NewsDetailsViewController: UIViewController {
     @IBOutlet weak var publishedLabel: UILabel!
     
     //MARK: - Variables
-    var newsDetails: ImageDetails?
+    var newsDetails: NewsDetails?
     var viewModel = NewsDetailsViewModel()
 
 //    MARK: - Override methods
@@ -41,14 +41,14 @@ class NewsDetailsViewController: UIViewController {
             titleLabel.text = news.title
             contentLabel.text = news.content
             discriptionLabel.text = news.description
-            publishedLabel.text = news.publishedAt
+            publishedLabel.text = viewModel.getPublishedTime(stringDate: news.publishedAt ?? "")
         }
        
     }
     
     /// Updating image view usnig image data
     /// - Parameter imageDetails: image news details which we need image data
-    func getImagedata(imageDetails: ImageDetails) {
+    func getImagedata(imageDetails: NewsDetails) {
         if let data = imageDetails.data {
             self.newsImagesView.image = UIImage(data: data)
         } else if let url = imageDetails.urlToImage {

@@ -10,7 +10,7 @@ import Foundation
 class TopHeadLinesViewModel {
     //MARK: - Variables
     var networkInstance = NetworkManager.getNetworkManagerInstance
-    var headlineListWithImage: (([ImageDetails]) -> Void)?
+    var headlineListWithImage: (([NewsDetails]) -> Void)?
     
     //MARK: - Other func
     

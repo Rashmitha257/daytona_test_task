@@ -13,7 +13,7 @@ class TopHeadLinesViewController: UIViewController {
     
     //MARK: - Variables
     var topHeadLinesViewModel = TopHeadLinesViewModel()
-    var headlineList = [ImageDetails]()
+    var headlineList = [NewsDetails]()
     
     //MARK: - Overrride methods
     override func viewDidLoad() {
@@ -66,7 +66,7 @@ extension TopHeadLinesViewController {
     
     /// Navigation to news details screen
     /// - Parameter newsDetails: news details to display in news details screen
-    func navigateToDetailsScreen(newsDetails: ImageDetails) {
+    func navigateToDetailsScreen(newsDetails: NewsDetails) {
         let vc =  UIStoryboard(name: storyBorad, bundle: nil).instantiateViewController(withIdentifier: newsDetailsScreen) as! NewsDetailsViewController
         vc.newsDetails = newsDetails
         navigationController?.pushViewController(vc, animated: true)

@@ -16,7 +16,7 @@ class HeadlineScreenImageCollectionViewCell: UICollectionViewCell {
     
     //MARK: - Variables
     var viewModel = HeadlineScreenImageCollectionViewModel()
-    var headLineDetails: ImageDetails?
+    var headLineDetails: NewsDetails?
     
     //MARK: - Other func
     
