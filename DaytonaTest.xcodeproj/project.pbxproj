@@ -39,7 +39,7 @@
 		EB8FFBD52ACEC21B0006E21F /* HeadlineScreenImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeadlineScreenImageCollectionViewCell.swift; path = "../New Group/HeadlineScreenImageCollectionViewCell.swift"; sourceTree = "<group>"; };
 		EB8FFBD72ACEF3400006E21F /* TopHeadLinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadLinesViewModel.swift; sourceTree = "<group>"; };
 		EBCC45C22ACFEBD6002A724B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		EBCC45C42AD029E1002A724B /* NewsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsDetails.swift; path = DaytonaTest/Helpers/NewsDetails.swift; sourceTree = SOURCE_ROOT; };
+		EBCC45C42AD029E1002A724B /* NewsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsDetails.swift; path = DaytonaTest/Models/NewsDetails.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			children = (
 				EB8FFBB82ACE4A4B0006E21F /* AppDelegate.swift */,
 				EB3DB99A2ACFA0AA00D7C26E /* Helpers */,
-				EB8FFBD02ACE53CE0006E21F /* Models */,
+				EBCC45C62AD0393E002A724B /* Models */,
 				EB8FFBCE2ACE4BD80006E21F /* NetworkService */,
 				EB8FFBCF2ACE4BFE0006E21F /* TopHeadlinesScreen */,
 				EB3DB9A12ACFD50500D7C26E /* NewsDetailsScreen */,
@@ -139,7 +139,7 @@
 			path = TopHeadlinesScreen;
 			sourceTree = "<group>";
 		};
-		EB8FFBD02ACE53CE0006E21F /* Models */ = {
+		EBCC45C62AD0393E002A724B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				EBCC45C42AD029E1002A724B /* NewsDetails.swift */,
